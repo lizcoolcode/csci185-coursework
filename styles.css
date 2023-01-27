@@ -1,0 +1,14 @@
+/* You're welcome to change any of this! */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: Arial, sans-serif;
+}
+
+p, a, li {
+    line-height: 1.5em;
+    font-size: 1.1em;
+}
