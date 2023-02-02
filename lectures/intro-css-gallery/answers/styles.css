@@ -1,0 +1,42 @@
+body {
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #F0F0F0;
+}
+
+header {
+    background-color: #FFD400;
+    padding: 50px
+}
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+}
+
+section {
+    display: inline-block;
+    margin-right: 40px;
+    margin-top: 40px;
+    border: solid 1px #ccc;
+    border-radius: 3px;
+    opacity: 0.9;
+    background-color: #FFF;
+    /* https://www.w3schools.com/css/css3_transitions.asp */
+    transition: all 0.5s;
+}
+
+section:hover {
+    opacity: 1;
+    /* https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotate */
+    transform: rotate(5deg);
+}
+
+section p {
+    margin: 15px 10px 30px 10px;
+}

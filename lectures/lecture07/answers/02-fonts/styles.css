@@ -1,0 +1,12 @@
+/* Your style rules here */
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-family: 'Monoton', cursive;
+    font-size: 3em;
+    font-weight: normal;
+}

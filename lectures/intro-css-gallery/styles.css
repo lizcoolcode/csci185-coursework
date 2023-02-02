@@ -1,0 +1,14 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: palevioletred;
+    padding: 30px;
+}
+
+main > section {
+    display: inline-block;
+    border: solid 2px pink
+    
+}

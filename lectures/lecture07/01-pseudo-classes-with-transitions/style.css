@@ -1,0 +1,120 @@
+/******************/
+/* General Styles */
+/******************/
+
+body * {
+    box-sizing: border-box;
+}
+
+body {
+   margin: 20px;
+   font-family: Arial;
+}
+
+nav {
+    margin-bottom: 30px;
+}
+
+section {
+    height: 250px;
+}
+
+div {
+    width: 200px;
+    height: 200px;
+    background-color: #CCC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/**********/
+/* Demo 1 */
+/**********/
+
+#demo1 a {
+   color: #fff;
+   background-color: #333;
+   text-decoration: none;
+   padding: 5px 10px;
+   display: inline-block;
+}
+
+#demo1 a:hover,
+#demo1 a:focus {
+   color: #333;
+   background-color: #fff;
+}
+
+
+
+/**********/
+/* Demo 2 */
+/**********/
+
+#demo2 a {
+    color: #fff;
+    background-color: #333;
+    text-decoration: none;
+    padding: 5px 10px;
+    font-family: Arial;
+    display: inline-block;
+    transition: all 0.3s ease-out;
+}
+ 
+#demo2 a:hover,
+#demo2 a:focus {
+    color: #333;
+    background-color: #fff;
+    padding: 5px 20px;
+    transform: rotate(-10deg);
+    font-size: 1.3em;
+}
+
+
+
+/**********/
+/* Demo 3 */
+/**********/
+
+#demo3 div {
+    background-color: #F9F9F9;
+    border: solid 1px #444;
+    padding: 20px;
+}
+
+#demo3 div:hover {
+    background: #EEE;
+    border: solid 5px #444;
+}
+
+
+
+/**********/
+/* Demo 4 */
+/**********/
+
+#demo4 div {
+    background: purple;
+    color: white;
+    transition: all 1s ease-out;
+}
+#demo4 div:hover {
+    background: blue;
+    opacity: 0.5;
+}
+
+
+
+/**********/
+/* Demo 5 */
+/**********/
+
+#demo5 div {
+    transition: all 0.2s ease-out;
+}
+#demo5 div:hover {
+    border-radius: 100px;
+}
