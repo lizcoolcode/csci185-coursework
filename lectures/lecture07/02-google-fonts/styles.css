@@ -1,1 +1,6 @@
 /* Your style rules here */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+p, li, h1, h2 {
+    font-family: 'Press Start 2P', cursive;
+}

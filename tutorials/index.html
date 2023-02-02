@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    <title>Bakery Example</title>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>My Bakery</h1>
+    </header>
+
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Semantic section to hold all of the snacks -->
+        <section id="items">
+
+            <h2>Order Online</h2>
+
+            <!-- individual snack item -->
+            <div class="item">
+                <h3>Baton</h3>
+                <img src="images/batons.jpg" />
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et sapien blandit ligula maximus mollis ut vel magna.</p>
+                <a href="#">more</a>
+            </div>
+
+            <!-- individual snack item -->
+            <div class="item">
+                <h3>Ice Cream</h3>
+                <img src="images/icecream.png" />
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et sapien blandit ligula maximus mollis ut vel magna.</p>
+                <a href="#">more</a>
+            </div>
+
+            <!-- individual snack item -->
+            <div class="item">
+                <h3>Cup Cakes</h3>
+                <img src="images/cupcake.png" />
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et sapien blandit ligula maximus mollis ut vel magna.</p>
+                <a href="#">more</a>
+            </div>
+
+            <!-- individual snack item -->
+            <div class="item">
+                <h3>Napolean</h3>
+                <img src="images/napolean.jpg" />
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et sapien blandit ligula maximus mollis ut vel magna.</p>
+                <a href="#">more</a>
+            </div>
+
+            <!-- individual snack item -->
+            <div class="item">
+                <h3>Vegan Chocolate Cake</h3>
+                <img src="images/vegan-chocolate-cake.jpg" />
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et sapien blandit ligula maximus mollis ut vel magna.</p>
+                <a href="#">more</a>
+            </div>
+
+            <!-- individual snack item -->
+            <div class="item">
+                <h3>Waffle</h3>
+                <img src="images/waffle.jpg" />
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et sapien blandit ligula maximus mollis ut vel magna.</p>
+                <a href="#">more</a>
+            </div>
+
+        </section>
+
+        <!-- Semantic section to hold "About Our Shop" -->
+        <section id="about">
+            <h2>About Our Shop</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et sapien blandit ligula maximus mollis ut vel magna. Cras ultricies tempus commodo. Aliquam quis convallis dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fermentum massa eu mollis ornare. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam neque neque, venenatis nec nulla ac, posuere gravida purus. Interdum et malesuada fames ac ante ipsum primis in faucibus. In vitae elit eget odio consequat suscipit. Integer vitae arcu ac quam molestie tempus.</p>
+
+            <p>Nulla commodo augue mauris, rutrum sollicitudin nisl commodo vitae. Aenean quis facilisis lectus, non ullamcorper tellus. Nullam lobortis, purus vel laoreet rhoncus, orci libero venenatis quam, et accumsan libero urna ut lectus. Proin massa diam, sodales ut interdum quis, dapibus vitae diam. Sed varius turpis vitae pulvinar auctor. Aliquam erat volutpat. Aenean in convallis sapien. Etiam eu libero nulla.</p>
+                
+            <p>Proin vehicula leo leo, at ultricies ligula dignissim ac. Maecenas auctor sodales interdum. Aenean sit amet fringilla erat. Donec sagittis orci in nibh feugiat, eu tincidunt diam porttitor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut dapibus dictum tempor. Phasellus vitae congue erat. Aenean malesuada metus a purus volutpat, quis rhoncus mauris sodales.</p>
+        
+        </section>
+
+
+        <!-- Semantic section to hold "Contact info" -->
+        <section id="contact">
+            <form action="https://formsubmit.co/vanwars@gmail.com" method="POST">
+                <h2>Contact Us</h2>
+                
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" spellcheck="true" rows="10"></textarea>
+                    
+                <button id="submit" type="submit">Send</button>
+
+                <!-- This is a hidden form field 
+                (invisible to the user, but necessary for the form) -->
+                <input type="hidden" id="redirect" name="_next" value="">
+            </form>
+        </section>
+
+
+        <!-- Semantic footer section -->
+        <footer>
+            <p>Copyright notice goes here...</p>
+        </footer>
+
+    </main>
+    <script>
+        document.getElementById("redirect").value = document.location.href.replace('index.html', 'form-submitted.html');
+    </script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.6em;
+}
+
+header, section, footer {
+    padding: 60px 15vw;
+}
+
+header {
+    background: #F4F4F4;
+    height: 150px;
+}
+
+#about, #contact {
+    min-height: 100vh;
+}
+
+#about {
+    background: #F4F4F4;
+}
+
+.item {
+    display: inline-block;
+    width: 28%;
+    margin-bottom: 50px;
+    margin-right: 30px;
+}
+
+.item>img {
+    width: 100%;
+}
+
+.item a, 
+.item a:link, 
+.item a:visited, 
+.item a:hover, 
+.item a:link,
+button {
+    text-decoration: none;
+    color: black;
+    padding: 8px 15px;
+    border: solid 2px black;
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: inline-block;
+}
+
+#contact form {
+    margin: 0 auto;
+    width: 600px;
+    padding: 20px;
+    background: #F4F4F4;
+    border-radius: 4px;
+}
+
+#contact label {
+    display: inline-block;
+    width: 75px;
+    padding: 10px 0px 5px 0;
+    margin-top: 10px;
+}
+
+#contact input, #contact textarea {
+    width: 550px;
+    padding: 10px;
+    border-radius: 4px;
+    background: #FFF;
+    border: solid 1px #CCC;
+    padding-bottom: 20px;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+/* Formatting for Detail Page */
+
+.detail img, .detail .description {
+    display: inline-block;
+}
+
+.detail img {
+    width: 40%;
+    vertical-align: top;
+    margin-right: 40px;
+}
+.detail .description {
+    width: 55%;
+}
+
+h1 a,
+h1 a:visited,
+h1 a:active,
+h1 a:link,
+h1 a:hover {
+    color: black;
+    text-decoration: none;
+}
+h1 a:hover {
+    text-decoration: underline;
+}
