@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+}
+
+header {
+    background-color: #45425a;
+    color: white;
+    padding: 20px;
+}
+
+footer {
+    background-color: #EEE;
+    padding: 30px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+ol {
+    margin-bottom: 40px;
+}
+
+code {
+    background-color: #EEE;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 20px;
+    column-gap: 20px;
+}
+
+.card {
+    border: solid 2px #000;
+    padding: 10px;
+}
+
+.card img {
+    width: 100%;
+    border: solid 2px #000;
+}
+
+footer {
+    background-color: #EEE;
+    padding: 30px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+main {
+    margin-left: 15vw;
+    margin-right: 15vw;
+}
+
+#card1,#card3,#card5 {
+    background-color: #EEEEEE;
+}
+
+#card2,#card4,#card6 {
+    background-color: #bce5d6;
+}
+
+#card1 img,#card3 img, #card5 img {
+    border-radius: 50%;
+}
+
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+footer {
+    font-weight: bold;
+}
+
+main p {
+    font-weight: bold;
+}
