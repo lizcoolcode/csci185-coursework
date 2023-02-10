@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+    font-family: "Malamondo"; 
+    src: url("../fonts/Malamondo.otf") format("opentype"); 
+}
+
+@font-face {
+    font-family: "Malamondo-Alt"; 
+    src: url('../fonts/MalamondoW01-Alt.woff2') format('woff2'),
+         url('../fonts/MalamondoW01-Alt.woff') format('woff'),
+         url("../fonts/MalamondoW01-Alt.ttf") format("truetype"); 
+}
+
+body {
+    color: white;
+    margin: 0;
+    background-color: #013672;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.5em;
+}
+
+header {
+    padding: 25px 13vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header img {
+    width: 180px;
+}
+
+nav,a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    text-transform: uppercase;
+}
+
+main {
+    padding: 100px 25vw 50px 25vw;
+    min-height: 55vh;
+}
+
+.landing {
+    background: white;
+    padding: 50px 15vw 100px 15vw;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    align-items: center;
+    justify-content: center;
+}
+
+.landing img {
+    width: 100%
+}
+
+.landing h1 {
+    color: black;
+    line-height: 1.2em;
+    font-size: 1.7em;
+    font-family: Malamondo-Alt;
+}
+
+.landing a {
+    text-align: center;
+    background-color: #013672;
+    color: white;
+    border: solid 2px white;
+    padding: 10px 20px;
+    font-weight: 300;
+    margin: auto;
+    display: block;
+    width: 100px;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+footer {
+    padding: 50px;
+    text-align: center;
+}
+
+ul {
+    margin-bottom: 50px;
+}
+
+h2 {
+    text-align: left;
+}
+
+.location-hours {
+    margin-top: 50px;
+}
+
+.location-hours p {
+    margin: 0;
+}
+
+form {
+    margin: 0 auto;
+    width: 600px;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+
+form label {
+    display: inline-block;
+    width: 75px;
+    padding: 10px 0px 5px 0;
+    margin-top: 10px;
+}
+
+form input, form textarea {
+    width: 550px;
+    padding: 10px;
+    border-radius: 4px;
+    background: #FFF;
+    border: solid 1px #CCC;
+    padding-bottom: 20px;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+form button {
+    border: solid 2px #fff;
+    padding: 10px 20px;
+    text-transform: none;
+    background: #013672;
+    color: white;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 300;
+    font-size: 1.1em;
+}
