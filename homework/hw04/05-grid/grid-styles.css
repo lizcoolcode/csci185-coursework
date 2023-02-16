@@ -1,0 +1,12 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: pink;
+}
+
+.grid-container {
+    height: 100vh;
+    /* you will add addition rules for the container here  */
+}
+
+/* create your child rules here:  */
