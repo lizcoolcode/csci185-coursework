@@ -13,21 +13,21 @@ body {
 
 nav {
     position: fixed;
-    background-color: bisque;
-    display: flex;
-    flex-direction: row;
-    padding: 1%;
+    background-color: rgb(221, 254, 255);
     width: 100%;
-    padding: 1%;
+    padding: 20px;
+    align-items: center;
 } 
 
 ul {
-    background-color: cornsilk;
-    display: flex;
-    flex-direction: row;
-    list-style-type: none;
-    width: 25%;
+    background-color: rgb(255, 249, 227);
+    width: 20%;
+    padding: 20px;
     align-items: center;
+}
+
+nav, ul {
+    display: flex;
     justify-content: space-between;
-    padding: 1%;
+    list-style: none;
 }
