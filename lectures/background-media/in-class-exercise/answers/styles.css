@@ -1,0 +1,75 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700);
+
+body * {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1, h2, h3 {
+    margin: 0;
+    text-shadow: -1px 1px 0 #000;
+}
+
+header {
+    font-family: Oswald;
+    background-color: black;
+    padding-bottom: 20px;
+    color: white;
+    height: 50vh;
+    display: flex;
+    align-items: flex-end; /* vertical-align text on the bottom */
+    justify-content: center; /* horizontal-align text in the center */
+    
+    
+    background-image: url('solar-eclipse.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: bottom;
+    background-attachment: fixed;
+}
+
+section {
+    padding: 50px 15vh;
+}
+
+#section2 {
+    background-color: black;
+    padding-left: 0px;
+
+    background-image: url('solar-eclipse-multiples.jpg');
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: contain;
+    background-attachment: fixed;
+}
+
+.text-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    margin: 40px;
+    width: 50vw;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.7em;
+}
+
+footer {
+    display: flex;
+    background: #F0F0F0;
+    height: 50vh;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 800px) {
+    .text-container {
+        background-color: rgba(255, 255, 255, 0.95);
+        width: calc(100vw - 100px);
+    }
+}

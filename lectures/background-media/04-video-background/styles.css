@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font: 400 15px/1.8 "Lato", sans-serif;
+    color: #777;
+}
+/* Style the video: 100% width and height to cover the entire window */
+.video-container {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+#myVideo {
+    /* position: fixed; */
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+  
+/* Add some content at the bottom of the video/page */
+.content {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.content h1 {
+    margin: 0px;
+}
+.content p {
+    margin-top: 0px;
+}
+  
+/* Style the button used to pause/play the video */
+#play-pause {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+}
+  
+#play-pause:hover {
+    background: #ddd;
+    color: black;
+}
+
+.section-2, .section-3 {
+    min-height: 100vh;
+    background: rgb(238, 238, 238);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section-3 {
+    background: rgb(161, 166, 236);
+}
+.section-3 h2 {
+    color: white;
+}

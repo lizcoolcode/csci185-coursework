@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!-- don't forget to add the lang attribute! -->
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <title>My Portfolio Site</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">About Me</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div>
+            <img id="profile-pic" src="images/profile.jpg" />
+            <h1>Welcome to my portfolio website</h1>
+        </div>
+    </header>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Ipsum lorem dolor aliquam ante commodo magna sed accumsan arcu neque.</p>
+        <p>Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi 
+            lorem vulputate lorem neque cubilia ac in adipiscing in curae 
+            lobortis tortor primis integer massa adipiscing id nisi accumsan 
+            pellentesque commodo blandit enim arcu non at amet id arcu magna. 
+            Accumsan orci faucibus id eu lorem semper nunc nisi lorem 
+            vulputate lorem neque cubilia.
+        </p>
+    </section>
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-holder">
+            <section class="card">
+                <img src="https://picsum.photos/id/1061/300/200" alt="image description 1" />
+                <h3>Name of Project</h3>
+                <p>Ipsum lorem dolor aliquam ante commodo magna sed accumsan.</p>
+            </section>
+            <section class="card">
+                <img src="https://picsum.photos/id/1015/300/200" alt="image description 2" />
+                <h3>Name of Project</h3>
+                <p>Ipsum lorem dolor aliquam ante commodo magna sed accumsan.</p>
+            </section>
+            <section class="card">
+                <img src="https://picsum.photos/id/572/300/200" alt="image description 3" />
+                <h3>Name of Project</h3>
+                <p>Ipsum lorem dolor aliquam ante commodo magna sed accumsan.</p>
+            </section>
+            <section class="card">
+                <img src="https://picsum.photos/id/573/300/200" alt="image description 4" />
+                <h3>Name of Project</h3>
+                <p>Ipsum lorem dolor aliquam ante commodo magna sed accumsan.</p>
+            </section>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Get In Touch</h2>
+        <p>Accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque lorem ipsum dolor.</p>
+        <div class="contact-details">
+            <form method="post" action="#">
+                <div class="row row1">
+                    <input type="text" name="name" id="name" placeholder="Name"/>
+                    <input type="email" name="email" id="email" placeholder="Email" />
+                </div>
+                <div class="row">
+                    <textarea name="message" id="message" placeholder="Message" rows="4"></textarea>
+                </div>
+                <div class="row">
+                    <input id="submit" type="submit" value="Send Message">
+                </div>
+            </form>
+            <section id="contact-info">
+                <div class="row">
+                    <i class="fa-solid fa-house-chimney"></i>
+                    <p>
+                        1234 Somewhere Rd. <br />
+                        Nashville, TN 00000 <br />
+                        United States
+                    </p>
+                </div>
+                <div class="row">
+                    <i class="fa-solid fa-mobile-screen"></i>
+                    <p>
+                        000-000-0000
+                    </p>
+                </div>
+                <div class="row">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>
+                        hello@gmail.com
+                    </p>
+                </div>
+            </section>
+        </div>
+    </section>
+    <footer>
+        <p>Copyright {{your name}}, 2022.</p>
+    </footer>
+
+</body>
+</html>
