@@ -28,7 +28,7 @@ body {
 }
 
 header, #quizzes, #tutorials, #homework, #inspiration, #class-exercises {
-    background-color: #fceeff;
+    background-color: #ffeef8;
     font-family: 'VT323', monospace;
     border: 2px;
     border-color: rgb(138, 38, 165);
