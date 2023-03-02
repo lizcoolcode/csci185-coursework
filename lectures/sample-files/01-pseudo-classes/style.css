@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 800px;
+    margin: auto;
+}
+
+section {
+    margin: 100px 0;
+}
+
+/* Section 1 */
+#section1 a,
+#section1 a:link {
+    color: blue;
+}
+
+#section1 a:hover,
+#section1 a:focus {
+    text-decoration: none;
+}
+
+#section1 a:active,
+#section1 a:visited {
+    color: red;
+    text-decoration: none;
+}
+
+
+
+/* Section 2 */
+#section2 p:nth-of-type(even) {
+    font-weight: bold;
+    color: teal;
+}
+
+#section2 p:first-letter {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: brown;
+}
+
+
+/* Section 3 */
+#section3 input {
+    font-size: 1.3em;
+    width: 500px;
+    border-radius: 4px;
+    border: solid 3px transparent;
+    background-color: #F0F0F0;
+    line-height: 2em;
+    margin-bottom: 20px;
+    padding: 4px 15px;
+}
+#section3 input:focus {
+    background-color: white;
+    border: solid 3px hotpink;
+    outline: none;
+}
+
+
+/* Section 4 */
+#section4 .new::before {
+    content: "new";
+    text-transform: uppercase;
+    font-size: 0.8em;
+    padding: 3px 6px;
+    background-color: hotpink;
+    margin-right: 5px;
+    color: white;
+    font-weight: bold;
+    border-radius: 3px;
+}
+
+/* requires that you include the font-awesome stylesheet */
+#section4 .comment::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 400;
+    content: "\f075";
+    margin-right: 5px;
+}
+
+
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+}
+
+.card {
+    width: 100%;
+    height: 250px;
+    background-color: #F0F0F0;
+    padding: 10px;
+}
+
+.card button {
+    display: none;
+}
+
+.card:hover button,
+.card:focus button,
+.card:focus-within button {
+    display: inline-block;
+}
+

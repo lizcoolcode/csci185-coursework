@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+}
+
+#mountains {
+    position: absolute;
+    width: 100vw;
+    bottom: 0vh;
+    left: 0;
+    z-index: 100;
+}
+#sun {
+    position: absolute;
+    color: #FF3300;
+    bottom: -10vh;
+    left: calc(50vw - 50px); 
+    font-size: 200px;
+
+    animation-timing-function: linear;
+    /* animation-fill-mode: forwards;  */
+    animation-iteration-count: infinite;
+    animation-direction: alternate; /* back and forth*/
+    animation-name: sunrise;
+    animation-delay: 1s;
+    animation-duration: 12s;
+}
+
+#cloud1 {
+    position: absolute;
+    color: #DDD;
+    font-size: 120px;
+    top: 0px;
+    left: 0px;
+    transform: translate(110vw, 0);
+    /* z-index: 100; */
+   
+    animation-timing-function: linear;
+    animation-iteration-count: infinite; 
+    animation-direction: alternate; /* back and forth*/
+    animation-name: moveCloudHorizontally;
+    animation-delay: 1s;
+    animation-duration: 13s;
+}
+
+#cloud2 {
+    position: absolute;
+    color: #EEE;
+    top: 0px;
+    left: 0px;
+    transform: translate(-30vw, 0);
+    font-size: 60px;
+
+    animation-timing-function: linear;
+    animation-iteration-count: infinite; 
+    animation-direction: alternate-reverse; /* back and forth*/
+    animation-name: moveCloudHorizontally;
+    animation-delay: 1s;
+    animation-duration: 18s;
+}
+
+@keyframes moveCloudHorizontally {
+    0% { 
+        transform: translate(-30vw, 0);
+    }
+    100% { 
+        transform: translate(110vw, 0); 
+    }
+}
+
+@keyframes sunrise {
+    0% { 
+        transform: translate(0, 0);
+        color: #FF3300;
+        font-size: 200px;
+    }
+    20% { 
+        transform: translate(0, 0);
+        color: #FF3300;
+        font-size: 200px;
+    }
+    80% { 
+        transform: translate(0, -70vh); 
+        color: yellow;
+        font-size: 100px;
+    }
+    100% { 
+        transform: translate(0, -70vh); 
+        color: yellow;
+        font-size: 100px;
+    }
+}

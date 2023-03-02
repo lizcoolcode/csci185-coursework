@@ -1,15 +1,18 @@
 1. What corrections did you have to make?
 
-Your answers here.
+I added image tags and aria labels
 
 1. Do you think your website is usable if you turn off the CSS? Why or why not?
 
-Your answers here.
+yes, I still think it's useable because it's not too complex and all of the accessibility features are still useable.
 
 1. Is your site is tabbable? In other words, without the use of the mouse, are all the links and buttons accessible using the tab key?
 
-Your answers here.
+Yes!
 
 
 
 Reminder: don't forget to include a screenshot of your Wave report and link to it from your homepage!
+
+    My page said it had five image errors that weren't visible unless styles was turned off, but even after I turned it off
+    they still were not visible anywhere and it didn't display what to fix.

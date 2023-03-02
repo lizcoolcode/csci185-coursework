@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif');
+
+body {
+    padding:4em; 
+    background:#fcfcfc;
+}
+
+.wrap {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+
+.msg {
+  color: whitesmoke;
+  text-align: center;
+  font-family: 'Bree Serif', Courier, monospaced;
+  font-size: 3.5em;
+  width:200px;
+  margin-top: -140px;
+  /* pointer-events: none;  */
+  z-index: 100;
+}
+
+.sticker {
+  width: 200px;
+  height: 200px;
+  background-image: url('sticker.png');
+  background-position: top center;
+  background-repeat: no-repeat; 
+  animation: spin 10s linear infinite;
+  /*Set our animation play state to paused initially */
+  animation-play-state: paused; 
+}
+
+.wrap:hover .sticker {
+  /* Toggle our animation play state to running when we are hovering over our sticker */
+  animation-play-state: running;
+}
+
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg); 
+    }
+}

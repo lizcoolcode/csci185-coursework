@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+#section1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.fa-heart {
+    animation-iteration-count: infinite;
+    font-size: 4em;
+    color: rgb(212, 32, 32);
+    animation-duration: 1s;
+    animation-name: heartbeat;
+    /* animation-play-state: paused; */
+
+}
+
+/* .fa-heart:hover {
+    animation-play-state: running;
+} */
+
+@keyframes heartbeat {
+    15% {
+      transform: scale(1.2);
+    }
+    30% {
+      transform: scale(1);
+    }
+    45% {
+        transform: scale(1.2);
+    }
+    60% {
+      transform: scale(1);
+    }
+}
