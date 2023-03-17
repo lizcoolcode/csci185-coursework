@@ -1,0 +1,26 @@
+body {
+    padding-left: 200px;
+    padding-right: 200px;
+}
+header {
+    padding: 10px;
+}
+#image-demo {
+    width: 400px;
+    border: solid 1px #000;
+    margin: 10px;
+}
+main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.my-section {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    border: solid 1px #000;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+}

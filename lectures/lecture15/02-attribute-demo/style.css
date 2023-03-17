@@ -1,0 +1,8 @@
+header {
+    padding: 10px;
+}
+#image-demo {
+    width: 400px;
+    border: solid 1px #000;
+    margin: 10px;
+}

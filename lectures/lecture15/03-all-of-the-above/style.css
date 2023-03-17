@@ -1,0 +1,11 @@
+.panel {
+  margin: 20px;
+  border: solid 1px #000;
+  min-height: 200px;
+  display: flex;
+  flex-wrap: wrap;
+}
+/* img {
+    width: 50%;
+    margin: 0px;
+} */

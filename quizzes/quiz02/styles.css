@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+
+h1, h2, h3 {
+    font-family: 'Passion One', cursive;
+}
+
+a:link {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header, main, footer {
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+header {
+    background-color: #013672;
+}
+
+header img, footer img {
+    width: 200px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2%;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    width: 20%
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+}
+
+h2 {
+    padding:10px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 10px;
+    grid-column-gap: 10px;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    border-radius: 1px;
+    border-color: darkgray;
+    border-style: solid;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+img {
+    max-width: 160px;
+}
+
+.card:hover {
+    background-color: #013672;
+    transition: 0.3s;
+    text-decoration-color: white;
+}
+
+.card:hover h3 {
+    color: white;
+}
+
+.card:hover p {
+    color: white;
+}
+
+@media (max-width: 800px) {
+    .cards {
+        display: grid;
+    grid-template-columns: auto;
+    padding: 10px;
+    grid-column-gap: 10px;
+    }
+
+    header nav {
+        display: none;
+    }
+}
