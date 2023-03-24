@@ -1,0 +1,93 @@
+body * {
+    box-sizing: border-box;
+}
+body {
+    transition: all 0.5s ease-in;
+    min-height: 100vh;
+    margin: 0px;
+    background: #F4F4F4;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    height: 50vh;
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+    align-items: center;
+    background-color: #CCC;
+    padding: 10px;
+    transition: all 0.5s ease-in;
+}
+
+header #seasons {
+    display: flex;
+    justify-self: flex-end;
+    justify-content: space-between;
+    width: 210px;
+}
+
+header h1 {
+    display: flex;
+    justify-self: center;
+}
+
+main {
+    max-width: 800px;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    background: white;
+    min-height: 50vh;
+}
+
+button {
+    background-color: white;
+    color: black;
+    border: solid 3px black;
+    padding: 5px 10px;
+}
+
+button:active, button:focus {
+    background-color: black;
+    color: white;
+    border: solid 3px white;
+}
+
+/* Fall Class */
+
+.fall h1 {
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+
+.fall header {
+    background-image: url('images/fall.png');
+    background-size: cover;
+    background-position: bottom center;
+}
+
+/* Winter Class */
+
+.winter h1 {
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+
+.winter header {
+    background-image: url('images/winter.png');
+    background-size: cover;
+    background-position: bottom center;
+}
+
+/* Spring Class */
+
+.spring h1 {
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+
+.spring header {
+    background-image: url('images/spring.png');
+    background-size: cover;
+    background-position: bottom center;
+}
