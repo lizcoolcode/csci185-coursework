@@ -14,6 +14,10 @@ function highContrastTheme() {
     document.querySelector("body").className = "high-contrast"
 }
 
+function dyslexiaTheme() {
+    document.querySelector("body").className = "high-contrast"
+}
+
 /*
     Hints: 
     1. Attach the event handlers (functions) above to the click event
