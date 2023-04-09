@@ -1,11 +1,9 @@
 function makeBigger() {
    alert('make bigger!');
-      document.querySelector("body").style.fontSize = "30px"
 };
 
 function makeSmaller() {
    alert('make smaller!');
-   document.querySelector("body").style.fontSize = "10px"
 };
 
 /*

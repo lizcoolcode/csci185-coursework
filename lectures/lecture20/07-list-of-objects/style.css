@@ -1,0 +1,29 @@
+body {
+    font-size: 1.4em;
+    font-family: Arial;
+}
+body * {
+    box-sizing: border-box;
+}
+
+.players {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px;
+}
+.card  {
+    padding: 10px;
+    width: 25%;
+}
+.card > div {
+    border: solid 1px #CCC;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card > div img {
+    height: 130px;
+}
+

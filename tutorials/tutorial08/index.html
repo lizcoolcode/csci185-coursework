@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>DOM Demo</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://cdn.jsdelivr.net/npm/p5@1.4.2/lib/p5.js" defer></script>
+        <script src="main.js" defer></script>
+    </head>
+    <body>
+        <main>
+            <aside>
+                <label for="color">Color:</label>
+                <input type="text" id="color" value="red" />
+
+                <label for="size">Size:</label>
+                <input type="text" id="size" value="40" />
+
+                <label for="shape">Shape:</label>
+                <select id="shape">
+                    <option value="circle">Circle</option>
+                    <option value="square">Square</option>
+                    <option value="triangle">Triangle</option>
+                    <option value="diamond">Diamond</option>
+                </select>
+
+            </aside>
+
+            <section id="canvas-holder"> 
+                <!-- A canvas element will be inserted here (from main.js) -->
+            </section>
+        </main>
+    
+    </body>
+</html>
