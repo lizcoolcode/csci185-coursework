@@ -1,0 +1,46 @@
+
+a:link {
+    color: rgb(103, 84, 84);
+    text-decoration: none;
+}
+
+a:visited {
+    color: rgb(103, 84, 84);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+li {
+    list-style-type: none;
+}
+.homepage {
+    background-color: white;
+    border: 1px;
+    border-style: dotted;
+    border-color: coral;
+    padding: 10px;
+}
+
+body {
+    background-image: url("photos/tumblr_nmjl24X2Ce1ru3nbdo2_250.png");
+    padding-left: 250px;
+    padding-right: 250px;
+    padding-top: 30px;
+}
+header {
+    background-color:antiquewhite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+
+header div, header img, header li {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
