@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="carousel.js" defer></script>
+    <title>Carousel</title>
+</head>
+<body>
+    <h1>Your Carousel</h1>
+    <section class="carousel" aria-label="Photo Carousel">
+        <div class="current-photo">
+            <!-- Replace image here -->
+            <img id="firstimg" src="images/img1-600x400.jpg" alt="current photo" />
+        </div> 
+        <button onclick="back()" class="back" aria-label="Show previous slide">
+            <img src="images/left.png" alt="" />
+        </button>
+        <button onclick="forward()" class="forward" aria-label="Show next slide">
+            <img src="images/right.png" alt="" />
+        </button>
+        <p class="caption">Image 1 of 10</p>
+    </section>
+
+    
+</body>
+</html>

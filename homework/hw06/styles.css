@@ -1,0 +1,60 @@
+body > * {
+    box-sizing: border-box;
+}
+
+h1, p {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.carousel {
+    display: flex;
+    width: 55vw;  
+    margin: 0 auto;
+    overflow: hidden; 
+    border: solid 1px #CCC;
+    flex-direction: column;
+}
+
+.current-photo img {
+    width: 100%;
+    animation: fadein 1s;
+}
+
+button img {
+    width: 100%;
+}
+
+.caption {
+    margin: 0 0 30px 0;
+}
+
+
+/* button formatting */
+button {
+    display: flex;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.5);
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -20vw;
+    width: 40px;
+    height: 40px;
+    margin-bottom: -20px;
+}
+
+.back {
+    align-self: start;
+}
+
+.forward {
+    align-self: end;
+    margin-top: -20px;
+}
+
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
