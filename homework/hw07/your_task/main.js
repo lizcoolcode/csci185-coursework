@@ -38,9 +38,33 @@ async function getTracks (term) {
 }
 
 async function getAlbums (term) {
+
+    document.querySelector('#albums').innerHTML = '';
+
     const url = `https://www.apitutor.org/spotify/simple/v1/search?type=album&q=${term}`;
     const data = await fetch(url).then(response => response.json());
+
     console.log(data);
+
+    for (let i = 0; i < 100; i++) {
+
+        const album = data[i];
+        const template = `
+            <section class="album-card" id="2lATw9ZAVp7ILQcOKPCPqp">
+            <div>
+            <img src="${album.image_url}">
+            <h2>${album.name}</h2>
+            <div class="footer">
+            <a href="${album.spotify_url}" target="_blank">
+                view on spotify
+            </a>
+        </div>
+    </div>
+</section>
+        `;
+        document.querySelector('#albums').innerHTML += template;
+    }
+
 }
 
 async function getArtist (term) {
