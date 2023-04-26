@@ -1,0 +1,474 @@
+body {
+    font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+}
+a, a:hover, a:visited, a:active { 
+    color: black;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 1.8em;
+}
+
+
+/* ***********************************************************
+   LAYOUTS
+   *********************************************************** */
+* {
+    box-sizing: border-box;
+}
+aside, footer, header, section, article {
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    overflow: hidden;
+    margin: 0px;
+    display: grid;
+    grid-template-columns: 250px auto;
+    grid-template-areas:
+       "left main";
+    height: 100vh;
+}
+aside {
+    grid-area: left;
+    border-right: dotted #999 1px;    
+}
+header {
+    position: fixed;
+    width: calc(100vw - 250px);
+    left: 250px;
+    background: #fff;
+    border-bottom: dotted #999 1px;   
+}
+
+main {
+    grid-area: main;
+    min-height: 350px;
+    max-height: 100vh;
+    overflow-y: auto;
+    z-index: 3;
+}
+
+footer {
+    grid-area: bottom;
+    border-top: dotted #999 1px;   
+}
+
+/* ***********************************************************
+   LEFT NAVIGATION
+   *********************************************************** */
+
+aside {
+    padding: 5px 25px;
+    flex-direction: column;
+    color: #000;
+}
+aside h1 {
+    margin-bottom: 40px;
+}
+
+aside .fa-spotify {
+    font-size: 1.5em;
+}
+
+aside a {
+    border-left: solid 3px transparent;
+    align-self: center;
+    width: 100%;
+    margin-bottom: 10px;
+    line-height: 30px;
+    padding-left: 10px;
+}
+
+aside a i {
+    margin-right: 15px;
+}
+
+aside a.selected, aside a:hover {
+    border-left: solid 3px #1cb954;
+}
+
+
+/* ***********************************************************
+   HEADER
+   *********************************************************** */
+header a,
+header a:visited, 
+header {
+    padding: 10px;
+    height: 100px;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+}
+
+header #search {
+    color: #000;
+    padding: 6px 10px 6px 48px;
+    height: 40px;
+    line-height: 40px;
+    border: solid 1px #000;
+    border-radius: 500px;
+    font-size: left;
+    margin-right: auto;
+    width: 80%;
+    font-size: 1.1em;
+    font-weight:500;
+}
+header .fa-search {
+    left: 30px;
+    position: relative;
+    color: #CCC;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #CCC;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #CCC;;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: #CCC;
+}
+
+
+/* ***********************************************************
+   ARTISTS, ALBUMS, & TRACKS
+   *********************************************************** */
+
+#featured-content {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding:0px;
+    margin-top: 100px;
+}
+
+#artist-section {
+    width: 40%;
+    padding-left: 30px;
+}
+#track-section {
+    width: 60%;
+    padding-left: 30px;
+}
+#album-section {
+    width: 100%;
+    padding-left: 30px;
+}
+#albums {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding:0px;
+}
+
+.artist-card {
+    background: #F0F0F0;
+    border-radius: 20px;
+    height: 340px;
+}
+.artist-card > div {
+    padding: 20px;
+}
+.artist-card img {
+    border-radius: 50%;
+    /* width: 100%; */
+    margin: auto;
+    max-height: 200px;
+    max-width: 100%;
+}
+
+.album-card {
+    width: 20%;
+    align-items: center;
+    justify-items: center;
+    padding: 10px;
+}
+
+.album-card > div {
+    padding: 20px;
+    /* height: 100%; */
+    border: dotted 1px #999;
+    overflow-x: hidden;
+}
+.album-card h2, .track-item h2 {
+    font-size: 0.95em;
+    margin-bottom: 0px;
+    white-space: nowrap;
+    max-width: calc((100vw - 250px) / 8);
+    text-overflow: ellipsis;
+    overflow-x: hidden;
+}
+
+.album-card img {
+    width: 100%;
+}
+.album-card .footer {
+    display: flex;
+    flex-direction: column;
+}
+.album-card .play-button {
+    color: white;
+    display: flex;
+    justify-content: center;
+    border-radius: 18px;
+    background: #1cb954;
+    width: 36px;
+    height: 36px;
+    line-height: 30px;
+    align-items: center;
+    padding-left: 2px;
+}
+
+.track-item {
+    display: flex;
+    padding: 5px 0px 0px 5px;
+    width: 100%;
+    min-width: 200px;
+    flex-direction: row;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    padding: 0px;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.track-item:focus {
+    outline: 1px solid #1cb954;
+}
+
+.track-item.preview:hover {
+    background: #F0F0F0;
+}
+.track-item i.play-track {
+    display: none;
+}
+.track-item.preview:hover i.play-track,
+.track-item.preview:active i.play-track,
+.track-item.preview:focus i.play-track {
+    position: relative;
+    display: inline;
+    left: -1.4em;
+    top: 0.4em;
+    color: #fff;
+    font-size: 2em;
+    width: 0px;
+}
+.track-item img {
+    height: 60px;
+    border: solid 1px #ccc;
+}
+.track-item .label {
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.track-item .label h2 {
+    margin-bottom: 0px;
+    font-size: 1em;
+}
+.track-item .label p {
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+
+
+
+
+
+/* ***********************************************************
+   AUDIO PLAYER
+   *********************************************************** */
+
+
+
+footer, #controls, #slider, #player {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    color: #444;
+}
+footer {
+    justify-content: flex-start;
+}
+
+footer .track-item {
+    width: 30%;
+    min-width: 200px;
+    padding: 5px 9px 0px 10px;
+}
+footer .track-item:hover {
+    background: none;
+}
+
+.player {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    min-width: 400px;
+}
+.player .controls {
+    height: 40px;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+    width: 110px;
+    align-self: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.player .controls button {
+    background: transparent;
+    border: none;
+}
+.player .controls i {
+    font-size: 1.2em;
+    color: #222;
+}
+
+.player .controls i:hover {
+    color: #777;
+}
+.player .controls .fa-play-circle, 
+.player .controls .fa-pause-circle {
+    font-size: 35px;
+}
+
+.player .slider {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 25px;
+    align-items: center;
+}
+.player span {
+    font-size: 0.8em;
+    letter-spacing: 1px;
+}
+
+.player #time-elapsed {
+    margin-right: 32px;
+}
+
+.player #time-total {
+    margin-left: 32px;
+}
+
+[type='range'] {
+	outline: none;
+    background: transparent;
+    font: 1em/1 arial, sans-serif;
+    -webkit-appearance: none;
+    width: 100%;
+}
+input[type=range]::-moz-range-track {
+    background-color: #777;
+  }
+
+[type='range']::-webkit-slider-runnable-track {
+  box-sizing: border-box;
+  border: none;
+  width: 12.5em;
+  height: 0.15em;
+  background: #777;
+}
+
+[type='range']::-webkit-slider-thumb {
+  margin-top: -0.55em;
+  -webkit-appearance: none;
+  box-sizing: border-box;
+  border: none;
+  width: 1.2em;
+  height: 1.2em;
+  border-radius: 50%;
+  background: #1cb954;
+}
+
+h2 {
+    font-size: 1.2em;
+}
+
+
+
+
+
+/* ***********************************************************
+   MEDIA QUERIES
+   *********************************************************** */
+
+
+@media screen and (max-width: 1200px) {
+    .album-card {
+        width: 25%;
+    }
+    .album-card h2 {
+        max-width: calc((100vw - 250px) / 6);
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .album-card {
+        width: 33%;
+    }
+    .album-card h2 {
+        max-width: calc((100vw - 250px) / 5);
+    }
+
+    #artist-section {
+        width: 100%;
+        padding: 0px 30px 0px 30px;
+    }
+    #artist {
+        height: auto;
+    }
+    #track-section {
+        width: 100%;
+        padding: 0px 30px 0px 30px;
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+    body {
+        overflow: hidden;
+        margin: 0px;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-areas:
+           "main"
+           "bottom";
+        height: 100vh;
+    }
+    header {
+        left: 0px;
+        width: 100vw;
+    }
+    aside, #upgrade {
+        display: none;
+    }
+
+    .player {
+        min-width: 200px;
+        width: auto;
+        margin-left: 30px;
+    }
+    .player #time-elapsed {
+        margin-right: 12px;
+    }
+    .player #time-total {
+        margin-left: 12px;
+    }
+    .album-card {
+        width: 50%;
+        height: auto;
+    }
+    .album-card h2 {
+        max-width: calc((100vw - 250px) / 2);
+    }
+}
